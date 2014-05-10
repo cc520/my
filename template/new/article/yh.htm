@@ -1,0 +1,594 @@
+{template 'header',$module}
+<div class="yh_top">
+    <div class="top">
+            <div class="sub_p_menu">
+                    {php $mid = 16;}
+                    {php $child = get_maincat(0, $mid, 1);}
+                    {loop $child $i $c}
+                    {if $i<4}
+                    <div class="g_b" dx={$i}>
+                    {if $i<10 && $c[child]}
+                    {php $sub = get_maincat($c[catid], $mid, 1);}
+                    <h3><a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" target="_blank">{set_style($c[catname], $c[style])}</a><i></i></h3>
+                    <ul>
+                    {loop $sub $j $s}
+                    {if $j<4}<li class="g_sub_tip"><a href="{$MODULE[$mid][linkurl]}{$s[linkurl]}" target="_blank">{set_style($s[catname], $s[style])}</a></li>{/if}
+                    {/loop}
+                    </ul>
+                    {/if}
+                    <div class="blankline"></div>
+                    <div class="clear"></div>
+                    <div class="g_b_content">
+                        <div class="g_c1 l">
+                            <ul>
+                                <li>
+                                    <h4>车表美容护理</h4>
+                                    <div class="g_line"></div>
+                                    <ul class="g_sub_m3">
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                      <li><a href="javascript:void(0);">无水洗车</a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <h4>车表美容护理</h4>
+                                    <div class="g_line"></div>
+                                    <ul class="g_sub_m3">
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <h4>车表美容护理</h4>
+                                    <div class="g_line"></div>
+                                    <ul class="g_sub_m3">
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                      <li><a>无水洗车</a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="g_c2 l">
+                            <div class="gad1">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sp1.png" alt="" /></a><a href=""><img src="{DT_STATIC}pic/css/images/sp2.png" alt="" /></a>
+                            </div>
+                            <div class="gad2">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sp3.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    {/if}
+                    {/loop}
+        </div>
+        <div class="gc2 r">
+            <a href=""><img src="{DT_STATIC}pic/css/images/yh_slide.png" alt="" /></a>
+        </div>
+    </div>
+</div>
+<div class="yh">
+    <div class="sec f1">
+        <div class="sheader">
+            <h2>汽车美容</h2>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="scontent">
+            <div class="g_c1 l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/yhl.png" alt="" /></a>
+            </div>
+            <div class="g_list m_shop_content l">
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="sec f2">
+        <div class="sheader">
+            <h2>汽车美容</h2>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="scontent">
+            <div class="g_c1 l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/yhl.png" alt="" /></a>
+            </div>
+            <div class="g_list m_shop_content l">
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="sec f3">
+        <div class="sheader">
+            <h2>汽车美容</h2>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="scontent">
+            <div class="g_c1 l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/yhl.png" alt="" /></a>
+            </div>
+            <div class="g_list m_shop_content l">
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="sec f4">
+        <div class="sheader">
+            <h2>汽车美容</h2>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="scontent">
+            <div class="g_c1 l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/yhl.png" alt="" /></a>
+            </div>
+            <div class="g_list m_shop_content l">
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="sec f5">
+        <div class="sheader">
+            <h2>汽车美容</h2>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="scontent">
+            <div class="g_c1 l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/yhl.png" alt="" /></a>
+            </div>
+            <div class="g_list m_shop_content l">
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+{template 'footer',$module}

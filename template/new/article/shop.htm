@@ -1,0 +1,560 @@
+{template 'header',$module}
+<div class="sp_sub_p_menu_bg"></div>
+<div class="sp">
+    <div class="sub_p_menu">
+            {php $mid = 16;}
+            {php $child = get_maincat(0, $mid, 1);}
+            {loop $child $i $c}
+            <div class="g_b" dx={$i}>
+            {if $i<10 && $c[child]}
+            {php $sub = get_maincat($c[catid], $mid, 1);}
+            <h3><a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" target="_blank">{set_style($c[catname], $c[style])}</a><i></i></h3>
+            <ul>
+            {loop $sub $j $s}
+            {if $j<4}<li class="g_sub_tip"><a href="{$MODULE[$mid][linkurl]}{$s[linkurl]}" target="_blank">{set_style($s[catname], $s[style])}</a></li>{/if}
+            {/loop}
+            </ul>
+            {/if}
+            <div class="blankline"></div>
+            <div class="clear"></div>
+            <div class="g_b_content">
+                <div class="g_c1">
+                    <ul>
+                        <li>
+                            <h4>车表美容护理</h4>
+                            <div class="g_line"></div>
+                            <ul class="g_sub_m3">
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                              <li><a href="javascript:void(0);">无水洗车</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <h4>车表美容护理</h4>
+                            <div class="g_line"></div>
+                            <ul class="g_sub_m3">
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <h4>车表美容护理</h4>
+                            <div class="g_line"></div>
+                            <ul class="g_sub_m3">
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                              <li><a>无水洗车</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g_c2">
+                    <div class="gad1">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp1.png" alt="" /></a><a href=""><img src="{DT_STATIC}pic/css/images/sp2.png" alt="" /></a>
+                    </div>
+                    <div class="gad2">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp3.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            {/loop}
+    </div>
+    <div class="sp_slide" id="sp_idx_slide">
+        <div class="slide_img">
+            <ul>
+                <li>
+                    <a href=""><img src="{DT_STATIC}pic/css/images/slide_img.jpg" height="368" width="741" alt=""/></a>
+                </li>
+            </ul>
+        </div>
+        <!--div class="slide_icon hd">
+            <ul>
+                <li class="g_icon"><a href=""><img src="{DT_STATIC}pic/css/images/slide_small.png" alt="" /></a></li>
+                <li class="g_icon"><a href=""><img src="{DT_STATIC}pic/css/images/slide_small.png" alt="" /></a></li>
+                <li class="g_icon"><a href=""><img src="{DT_STATIC}pic/css/images/slide_small.png" alt="" /></a></li>
+                <li class="g_icon"><a href=""><img src="{DT_STATIC}pic/css/images/slide_small.png" alt="" /></a></li>
+            </ul>
+        </div-->
+        <div class="sp_slide_tool">
+            <div class="slide_tool_contents">
+                <ul>
+                  <li><a href=""><img src="{DT_STATIC}pic/css/images/shop3.png" alt="" width="210" height="115" /></a></li>
+                  <li><a href=""><img src="{DT_STATIC}pic/css/images/shop3.png" alt="" width="210" height="115" /></a></li>
+                  <li><a href=""><img src="{DT_STATIC}pic/css/images/shop3.png" alt="" width="210" height="115" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="icommend">
+        <div class="l icommend_left">
+            <div class="icommend_tabs hd sp_icommend_tabs">
+                <ul>
+                    <li class="ic_t1 ic_sel g_first"><a href="{$MODULE[5][linkurl]}">本期优惠</a><i></i></li>
+                    <li class="ic_t2 g_next"><a href="{$MODULE[16][linkurl]">商家推荐</a><i></i></li>
+                    <li class="ic_t3"><a href="{$MODULE[5][linkurl]}">网友好评</a><i></i></li>
+                    <li class="ic_t4 g_last"><a href="{$MODULE[5][linkurl]}">最新发布</a><i></i></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="ic_c1 icommend_content m_shop_content bd">
+                <ul>
+                <!--{php $tags = tag("moduleid=16&length=36&condition=status=3 and level>0 and thumb<>''&areaid=$cityid&pagesize=".$DT['page_sell']."&order=addtime desc&width=100&height=100&cols=5&target=_blank&template=null")}-->
+                {loop $tags $i $t}
+                  <li>
+                      <div>
+                          <a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}><img src="{$t[thumb]}"  alt="{$t[alt]}" width="212" height="212" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>{dsubstr($t[title],20,'...')}</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.0</span><span class="buynum"><span class="buynum_d">{$t[sales]}</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href="{$t[linkurl]}"></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="yh_price">
+                              <label for="">优惠</label>
+                              <span class="dp">200元</span>
+                          </div>
+                      </div>
+                  </li>
+                {/loop}
+                  <!--li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="226" height="226" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="price">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.00</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li-->
+                </ul>
+                <ul>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="212" height="212" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="dprice">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.0</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="212" height="212" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="dprice">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.0</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="212" height="212" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="dprice">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.0</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="g_last">
+                      <div>
+                          <a href=""><img src="{DT_STATIC}pic/css/images/p1.png" width="212" height="212" alt="" /></a>
+                          <div class="g_sub_c">
+                              <p>汽车坐垫 新款四季通用皮革座垫 科鲁兹迈</p>
+                              <div class="dprice">
+                                  <div class="l">
+                                      <span class="pi1">￥</span><span class="pi2">580.0</span><span class="buynum"><span class="buynum_d">231</span>人已购买</span>
+                                  </div>
+                                  <div class="l qg_icon">
+                                      <a href=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <!--<div class="ic_c2 icommend_content m_shop_content"></div>-->
+        </div>
+        <div class="r rc_ad">
+            <div class="g_sub_header">
+                <h3><label for="">商家地图</label><a href="" class="more"></a></h3>
+            </div>
+            <div class="g_sub_map">
+                <a href=""><img src="{DT_STATIC}/pic/css/images/shopmap.png" alt="" /></a>
+                <div class="gomore">点击查看更多&nbsp;&nbsp;</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="sp_sec1">
+        <div class="g_shop_title">
+            <h3>汽车美容</h3>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="sp_sub_menu l">
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+        </div>
+        <div class="sp_sub_content l">
+            <div class="hr"></div>
+            <div class="g_list">
+                <div class="g_r1">
+                    <div class="g_c1r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c3r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="g_r2">
+                    <div class="g_c3r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                    <div class="g_c1r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="sp_sec1 sp_sec4">
+        <div class="g_shop_title">
+            <h3>汽车美容</h3>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="sp_sub_menu l">
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+        </div>
+        <div class="sp_sub_content l">
+            <div class="hr"></div>
+            <div class="g_list">
+                <div class="g_r1">
+                    <div class="g_c1r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c3r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="g_r2">
+                    <div class="g_c3r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                    <div class="g_c1r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r1 l m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="sp_sec1 sp_sec2">
+        <div class="g_shop_title">
+            <h3>汽车美容</h3>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="sp_sub_menu l">
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+        </div>
+        <div class="sp_sub_content l">
+            <div class="hr"></div>
+            <div class="g_list">
+                <div class="g_c1 l">
+                    <div class="m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="g_c2 l">
+                    <div class="g_c2r1 m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r2">
+                        <div class="l m">
+                            <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                        </div>
+                        <div class="l m">
+                            <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="g_c3 l">
+                    <div class="m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/s112.png" height="466" width="232" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <div class="sp_sec1 sp_sec3">
+        <div class="g_shop_title">
+            <h3>汽车美容</h3>
+            <ul>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+              <li><a href="">车表美容护理</a></li>
+            </ul>
+        </div>
+        <div class="sp_sub_menu l">
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+            <div class="clear"></div>
+            <div class="sp_sub_title">
+                <h3>车表美容护理</h3>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="sp_sub_links">
+                <a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a><a href="">无水洗车</a>
+            </div>
+        </div>
+        <div class="sp_sub_content l">
+            <div class="hr"></div>
+            <div class="g_list">
+                <div class="g_c1 l">
+                    <div class="g_r1 m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_r2 m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                    <div class="g_r3 m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="g_c2 l">
+                    <div class="g_c2r1 m">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/sp35.png" alt="" /></a>
+                    </div>
+                    <div class="g_c2r2">
+                        <div class="g_c2r2c1">
+                            <div class="l m ml0">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                            </div>
+                            <div class="l m mr0">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="g_c2r2c2">
+                            <div class="l m ml0">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                            </div>
+                            <div class="l m mr0">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g_c3 l">
+                    <div class="g_c3r1">
+                        <div class="m">
+                            <a href=""><img src="{DT_STATIC}pic/css/images/sp11.png" height="466" width="232" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="g_c3r2">
+                        <div class="m">
+                            <a href=""><img src="{DT_STATIC}pic/css/images/sec1pic.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+{template 'footer',$module}

@@ -1,0 +1,155 @@
+{template 'header_module',$module}
+<div class="navlist">
+    <div class="navlist_inner">
+        <a href="">首页</a>&gt;
+        <a href="">汽车美容</a>&gt;
+        <a href="">新车开蜡</a>
+    </div>
+</div>
+<div class="chlist shopshow">
+    <!--推荐-->
+    <div class="g_c1 l">
+        <div class="menulist">
+        <div class="sub_p_menu">
+				{php $mid = 16;}
+				{php $child = get_maincat(0, $mid, 1);$c_count=count($child)-1;}
+				{loop $child $i $c}
+                <div class="g_c_b {if $i==$c_count}g_last{/if}" dx={$i}>
+				{if $i<10 && $c[child]}
+				{php $sub = get_maincat($c[catid], $mid, 1);}
+                <h3><a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" target="_blank">{set_style($c[catname], $c[style])}</a><i></i></h3>
+                <ul>
+				{loop $sub $j $s}
+                {if $j<4}<li class="g_sub_tip"><a href="{$MODULE[$mid][linkurl]}{$s[linkurl]}" target="_blank">{set_style($s[catname], $s[style])}</a></li>{/if}
+				{/loop}
+                </ul>
+				{/if}
+                <div class="clear"></div>
+            </div>
+				{/loop}
+            </div>
+        </div>
+        <div class="weekpro">
+            <h2>本周热销</h2>
+            <ul>
+               {php $t=array_pad(array(),5,0);}
+               {loop $t $k $v}
+              <li>
+                  <div>
+                      <div class="g_img l"><a href=""><img src="{DT_STATIC}pic/css/images/wpic.png" width="66" height="66" alt="" /></a></div>
+                      <div class="g_intro l">
+                          <a href="">汽车坐垫 新款四季通用皮革坐垫</a>
+                          <span class="l_price">￥580.0</span>
+                      </div>
+                  </div>
+              </li>
+              {/loop}
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div> 
+    <div class="g_c2 l">
+        <div class="spxi l">
+            <div class="gimg l">
+                <a href=""><img src="{DT_STATIC}pic/css/images/shopp.png" alt="" /></a>
+            </div>
+            <div class="ginfo">
+                <h2>
+                    汽车坐垫 新款四季通用皮革座垫 科普姿迈速腾宝来M6CRV起亚K3K5
+                </h2>
+                <p class="price">
+                <label for="">单价：</label>
+                <span class="red b"> ￥1 </span>
+                </p>
+                <p class="brand">
+                <label for="">品牌：</label>
+                <span class="d">未填写</span>
+                </p>
+                <p class="seller">
+                <label for="">销量：</label>
+                <span class="d">累计出售<span class="sn red"> 0 </span>件，<span class="so red"> 0 </span>个订单</span>
+                </p>
+                <p class="quanity">
+                <label for="">库存：</label>
+                <span>还剩<span class="red"> 100000 </span>件</span>
+                </p>
+                <p class="rq">
+                <label>人气：</label>
+                <span>已有<span class="red"> 211 </span>人关注</span>
+                </p>
+                <p class="update">
+                <label for="">更新：</label>
+                <span>2014-04-05</span>
+                </p>
+                <div class="buybtn">
+                    <a href="" id="gobuy"></a>
+                    <a href="" id="addcart"></a>
+                </div>
+                <div class="buytool">
+                    <ul>
+                      <li class="addfav icon"><a href="">加入收藏</a></li>
+                      <li class="tellfriend icon"><a href="">告诉好友</a></li>
+                      <li class="rsearch icon"><a href="">重新搜索</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="seller r">
+            <h3>常州汽车车行天下网</h3>
+            <div class="comp">
+                <div class="compinner">
+                    <p class="pass_s">
+                    <span class="passi"></span>
+                    <span>通过 认证</span>
+                    <a href="">[诚信档案]</a>
+                    </p>
+                    <p class="info_s">
+                    <span>联系人<span>何跟胜先生</span>
+                    <span><a href="" class="ssii1"></a><a href="" class="ssii2"></a><a href="" class="ssii3"></a></span>
+                    </p>
+                    <p class="on_s">
+                    会员[当前离线]
+                    <a href="">[加为商友]</a>
+                    <a href="">[发送件]</a>
+                    </p>
+                    <p>
+                    <label for="">邮件</label>
+                    <span>448124124@qq.com</span>
+                    </p>
+                    <p>
+                    <label for="">电话</label>
+                    <span>0519-123123123</span>
+                    </p>
+                    <p>
+                    <label for="">手机</label>
+                    <span>12402421241</span>
+                    </p>
+                    <p>
+                    <label for="">地区</label>湖北-武汉市
+                    </p>
+                    <p>
+                    <label for="">地址</label>
+                    湖北武汉市洪山区落实南路大厦9087
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="prmenu">
+            <ul>
+              <li>详细描述</li>
+              <li>使用评价</li>
+              <li>购买记录</li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+            <div class="prcontent">
+                <img src="{DT_STATIC}pic/css/images/shopcontent.png" alt="" />
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>
+{template 'footer',$module}

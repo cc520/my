@@ -1,0 +1,31 @@
+.modbx .gtop{height:300px;background:#efefef;padding:15px 0 17px 0;}
+.modbx .gtop .ginner{width:1200px;margin:0 auto;background:#fff;height:100%;}
+.modbx .gtop .g_c1{width:260px;height:100%;background:url('./images/bxp1.png') 0 0 no-repeat;}
+.modbx .gtop .g_c2{width:710px;height:100%;}
+.modbx .gtop .g_c3{width:230px;height:100%;}
+.modbx .gtop .g_c3 h3{height:37px;line-height:37px;font-size:15px;background:#dfdfdf;color:#333;text-indent:19px;}
+.modbx .gtop .g_c3 .gc{width:209px;margin:0 auto;}
+.modbx .gtop .g_c3 .gch{height:42px;line-height:42px;border-bottom:1px solid #eaeaea;position:relative;}
+.modbx .gtop .g_c3 .gch span{height:100%;width:50%;float:left;text-align:center;color:#666;font-size:14px;}
+.modbx .gtop .g_c3 .gch i{height:12px;width:1px;display:block;background:#cecece;position:absolute;left:50%;top:14px;}
+.modbx .gtop .g_c3 ul li{height:35px;line-height:35px;}
+.modbx .gtop .g_c3 ul li.odd{background:#f9f9f9;}
+.modbx .gtop .g_c3 ul li span{float:left;height:100%;width:50%;text-align:center}
+
+.modbx .hzgx{width:1206px;margin:0 auto;}
+.modbx .hzgx .hzheader{height:48px;line-height:48px;font-size:18px;color:#333;}
+.modbx .hzgx .gc{border:6px solid #efefef;height:227px;background:#f5f5f5;}
+.modbx .hzgx .gc .item{width:190px;margin-right:10px;float:left;height:100%;background:#fff;}
+.modbx .hzgx .gc .item_inner{width:170px;margin:0 auto;}
+.modbx .hzgx .gc .item.last{margin-right:0;}
+.modbx .hzgx .gc .item .clogo{text-align:center;height:72px;line-height:72px;border-bottom:1px dotted #b2b2b2;}
+.modbx .hzgx .gc .item .clogo img{vertical-align:middle;}
+.modbx .hzgx .gc .cactive .intro{margin-top:8px;overflow:hidden;}
+.modbx .hzgx .gc .cactive .intro label{float:left;width:66px;background:#4285cc;color:#fff;height:18px;text-align:center;line-height:18px;}
+.modbx .hzgx .gc .cactive .intro span{float:left;width:100px;margin-left:4px;line-height:18px;font-weight:bold;}
+.modbx .hzgx .gc .cactive .gimg{text-align:center;height:104px;overflow:hidden;line-height:104px;margin-top:4px;}
+.modbx .hzgx .gc .cactive .gimg img{vertical-align:middle;}
+
+.modbx .gmbz{width:1200px;margin:20px auto 0 auto;}
+.modbx .gmbz .gmheader{width:1288px;margin-right:-88px;}
+.modbx .gmbz .gminfo{width:1206px;margin-right:-6px;margin-top:9px;}

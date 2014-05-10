@@ -1,0 +1,53 @@
+a{font-size:12px;}
+.l{ float: left;display:inline}  
+.r{ float: right;display:inline}  
+.clear{ clear: both; font-size:1px; width:1px; height:0; visibility: hidden; }  
+.hidden{display: none;}  
+.unL,.unL a{text-decoration: none;}  
+.unB{border:none;} 
+.mt10{margin-top:10px;}
+body{background:#dfdfdf;font-family:'Œ¢»Ì—≈∫⁄';font-size:12px;}
+.ss .topheader{height:45px;line-height:45px;border-bottom:2px solid #fff;background:#ccc;}
+.ss .compchlogo{float:left;width:112px;height:45px;}
+.ss .headerinner{width:1000px;margin:0 auto;}
+.ss .compmenu{float:right;height:100%;line-height:100%;}
+.ss .compmenu li{float:left;margin-left:10px;margin-right:10px;height:100%;line-height:45px;color:#000}
+.ss .compmenu li a{font-size:14px;color:#000;}
+.ss .compinfo{height:61px;width:1000px;margin:0 auto;margin-top:41px;;}
+.ss .compinfo .cinfo{margin-left:22px;}
+.ss .compinfo .cinfo h2{height:26px;line-height:26px;color:#10286c;font-weight:bold;font-size:26px;margin-top:5px;}
+.ss .compinfo .cinfo .mainfw{line-height:12px;margin-top:12px;margin-left:5px;}
+.ss .compheader{height:45px;background:#10286c;margin-top:27px;}
+.ss .compheader a{line-height:45px;padding-left:10px;padding-right:10px;color:#fff;font-size:14px;}
+.ss .compheader .inner{width:1000px;margin: 0 auto;}
+.ss .slide{width:1000px;margin: 0 auto;position:relative;height:346px;}
+.ss .slide .sddir{height:86px;width:42px;background-position:0 0;background-repeat:no-repeat;position:absolute;top:123px;z-index:2;}
+.ss .slide .sdprev{background-image:url('./images/cpprev.png');left:21px;}
+.ss .slide .sdnext{background-image:url('./images/cpnext.png');right:21px;}
+.ss .detail_wrap{width:1000px;margin:23px auto 0 auto;min-height:259px;background:#fff;_height:259px;}
+.ss .detail{padding:9px 22px 12px 10px;overflow:hidden;}
+.ss .detail .gimg{width:393px;height:100%;}
+.ss .detail .intro{width:547px;margin-left:28px;}
+.ss .detail .intro h2{font-size:16px;color:#10286c;font-weight:bold;line-height:16px;margin-top:5px;float:left;}
+.ss .detail .intro .morebtn{float:right;position:relative;top:-3px;}
+.ss .detail .intro .morebtn a{float:left;width:75px;height:29px;line-height:29px;font-size:14px;color:#fff;text-align:center;background:url('./images/dpbtn.png') 0 0 no-repeat;margin-left:13px;display:inline;}
+.ss .detail .intro .introduce{line-height:22px;font-size:12px;color:#666;height:66px;overflow:hidden;}
+.ss .cominfo{line-height:24px;margin-top:4px;}
+.ss .cominfo .binfo p span,.ss .cominfo a{color:#1e50a2;}
+.ss .cominfo .loc .b{color:#1e50a2;}
+.ss .cominfo .loc{position:relative;max-height:36px;overflow:hidden;line-height:18px;}
+.ss .cominfo .loc .map{display:inline-block;width:10px;height:14px;background:url('./images/maploc.png') 0 0 no-repeat;padding:0 5px;height:100%\9;position:relative;top:2px;}
+
+.ss .sec{width:1000px;margin:0 auto;}
+.ss .onsell{margin-top:16px;}
+.ss .onyh{margin-top:23px;}
+.sheader{height:38px;border-bottom:4px solid #10286c;background:url('./images/compmenu.png') 0 0 no-repeat;color:#fff;line-height:38px;}
+.sheader h2{float:left;width:236px;color:#fff;font-size:20px;margin-left:43px;display:inline;}
+
+/* …Ã∆∑ */
+
+.sec .glist{background:#fff;overflow:hidden;padding-top:17px;}
+.sec .glist li{margin-left:36px;margin-right:0;}
+.sec .glist li .yh_price{left:-25px;top:-15px;}
+
+.footer_cmp{height:90px;text-align:center;color:#666;line-height:90px;}

@@ -1,0 +1,126 @@
+{template 'header',$module}
+<div class="er">
+    <div class="iad">
+        <a href=""><img src="{DT_STATIC}pic/css/images/erad1.png" alt="" /></a>
+    </div>
+    <div class="ibuy">
+        <div class="g_c1 l">
+            <div class="erheader">
+                <h2>我要买车</h2>
+            </div>
+            <div class="ibuylist">
+                <ul>
+                    <li>
+                        <label for="" class="l gf">车辆：</label>
+                        <div class="c1 l fselect">别克</div>
+                        <div class="c2 l fselect">全部车系（可不选）</div>
+                        <div class="c3 l fselect">全部车型（可不选）</div>
+                    </li>
+                    <li>
+                        <p>
+                        <label for="">品牌：</label><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">日产</a><a href="">全部品牌>></a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <label for="">车系：</label>
+                        <a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a><a href="">凯越</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <label for="">级别：</label>
+                        <a href="">中大型车</a><a href="">中大型车</a><a href="">中大型车</a><a href="">中大型车</a><a href="">中大型车</a><a href="">中大型车</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <label for="">价格：</label>
+                        <a href="">3万及以下</a><a href="">3万及以下</a><a href="">3万及以下</a><a href="">3万及以下</a><a href="">3万及以下</a><a href="">自定义价格>></a>
+                        </p>
+                    </li>
+                    <li class="glast">
+                        <p class="l">
+                        <label for="">车龄：</label>
+                        <a href="">一年及以内</a><a href="">一年及以内</a><a href="">一年及以内</a><a href="">自定义年龄>></a>
+                        </p>
+                        <p class="l">
+                        <label for="">里程：</label>
+                        <a href="">一万公里及以内</a><a href="">一万公里及以内</a><a href="">一万公里及以内</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="g_c2 l">
+            <div class="g_inner">
+                <div class="gopt">车系</div>
+                <div class="gopt">品牌</div>
+                <div class="gopt">级别</div>
+                <div class="gopt">价格</div>
+                <div class="gbtn">
+                    <a href="" class="l">立即搜车</a><a href="" class="r">车源发布</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="adlist">
+        <div class="clad1 l">
+            <a href=""><img src="{DT_STATIC}pic/css/images/cl1.png" alt="" /></a>
+        </div>
+        <div class="clad2 r">
+            <a href=""><img src="{DT_STATIC}pic/css//images/cl2.png" alt="" /></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="glist">
+        <div class="g_c1 l">
+            <div class="h">
+                <h3>
+                </h3>
+                <a href="" class="more">更多>></a>
+            </div>
+            <div class="g_listcontent">
+                <ul>
+               {php $t=array_pad(array(),16,0);}
+               {loop $t $k $v}
+                    <li{if ($k+1)%4 == 0} style="margin-right:0"{/if}>
+                        <div>
+                            <div class="g_img">
+                                <a href=""><img src="{DT_STATIC}pic/css/images/erchpic.png" alt="" /></a>
+                            </div>
+                            <div class="info">
+                                <p class="name">2007款 奇瑞QQ</p>
+                                <p class="path">2008年上牌 4.0万公里</p>
+                                <p class="price">1.70万</p>
+                            </div>
+                        </div>
+                    </li>
+                {/loop}
+                </ul>
+            </div>
+        </div>
+        <div class="g_c2 r">
+            <h3>常州二手车经销商</h3>
+            <ul>
+               {php $t=array_pad(array(),8,0);$count=7;}
+               {loop $t $k $v}
+               <li {if $k==$count}class="glast"{/if}>
+                <div>
+                    <div class="g_img l">
+                        <a href=""><img src="{DT_STATIC}pic/css/images/erchlogo.png" alt="" /></a>
+                    </div>
+                    <div class="g_info l">
+                        <p class="name">丰田</p>
+                        <p class="phone">40000-168-168</p>
+                    </div>
+                </div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+</div>
+{template 'footer',$module}
