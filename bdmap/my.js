@@ -13,51 +13,79 @@ function init(){
     });
     */
     var myGeo=new BMap.Geocoder();
-    myGeo.getPoint("江苏常州金梅花园",function(point) { 
+    /*myGeo.getPoint("江苏常州金梅花园",function(point) { 
         if(point){
             map.centerAndZoom(point,16);
             map.addOverlay(new BMap.Marker(point));
         }
-    },'常州市');
+    },'常州市');*/
     var title='城市地图信息';
-    $.getJSON('city.json',function(dcity){
 
-        randomTenCity();
+    randomTenCity();
 
-        function addMarket(point,i){
-            var marker= new BMap.Marker(point);
-            marker.addEventListener('click',function() {
-
-                var opts={
-                    width:250,
-                    height:100,
-                    title:title
-                };
-                var infoWindow=new BMap.InfoWindow();
-                infoWindow.setContent('<div id="city"><p><label for="">城市：</label><span>' + dcity[i]['name'] + '</span></p><p><label for="">地址：</label><span>' + dcity[i]['addr']+ '</span></p></div>');
-                infoWindow.setWidth(250);
-                infoWindow.setHeight(100);
-                map.openInfoWindow(infoWindow,point);
+    function addMarket(point,i){
+        var marker= new BMap.Marker(point);
+        marker.addEventListener('click',function() {
+            var opts={
+                width:250,
+                height:100,
+                title:title
+            };
+            myGeo.getLocation(point,function(gresult) {
+                //console.log(gresult);
+                if(gresult){
+                    var infoWindow=new BMap.InfoWindow();
+                    infoWindow.setContent('地点：' + gresult.address);
+                    infoWindow.setWidth(250);
+                    infoWindow.setHeight(100);
+                    map.openInfoWindow(infoWindow,point);
+                }
             });
 
-            map.addOverlay(marker);
+        });
 
+        map.addOverlay(marker);
+
+    }
+    function randomTenCity(){
+        var bounds=map.getBounds();
+        var southwest=bounds.getSouthWest();
+        var northeast=bounds.getNorthEast();
+        var spn=bounds.toSpan();
+        /*console.log(southwest);
+        console.log(northeast);*/
+        
+        var lngSpan=spn.lng;
+        var latSpan=spn.lat;
+        for(var i=0;i<10;i++){
+            var point=new BMap.Point(southwest.lng + lngSpan*(Math.random()),southwest.lat+latSpan*(Math.random()));
+            addMarket(point,i);
         }
-        function randomTenCity(){
-            var bounds=map.getBounds();
-            var southwest=bounds.getSouthWest();
-            var northeast=bounds.getNorthEast();
-            var spn=bounds.toSpan();
-            /*console.log(southwest);
-            console.log(northeast);*/
-            
-            var lngSpan=spn.lng;
-            var latSpan=spn.lat;
-            for(var i=0;i<10;i++){
-                var point=new BMap.Point(southwest.lng + lngSpan*(Math.random()),southwest.lat+latSpan*(Math.random()));
-                addMarket(point,i);
+    }
+    $('#querycity').click(function() {
+        var qtxt = $('#querytext').val();
+        var myGeo=new BMap.Geocoder();
+        myGeo.getPoint(qtxt,function(point) {
+            if(point){
+                var marker = new BMap.Marker(point);
+                marker.addEventListener('click',function() {
+                    var infoWindow=new BMap.InfoWindow();
+                    infoWindow.setContent('地点：' + qtxt);
+                    infoWindow.setWidth(250);
+                    infoWindow.setHeight(100);
+                    map.openInfoWindow(infoWindow,point);
+                });
+                map.addOverlay(marker);
+                $('#citylist').append('<a href="javascript:void(0)" class="cityloc" lng='+point.lng+' lat='+point.lat+'>' + qtxt + '</a>');
+                map.centerAndZoom(point,16);
             }
-        }
+        });
+    });
+    $('#citylist').delegate('.cityloc','click',function(argument) {
+        var lng=$(this).attr('lng');
+        var lat=$(this).attr('lat');
+        var point = new BMap.Point(lng,lat);
+        map.centerAndZoom(point,16);
     });
 }
 
