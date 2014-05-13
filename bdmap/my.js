@@ -24,7 +24,8 @@ function init(){
     randomTenCity();
 
     function addMarket(point,i){
-        var marker= new BMap.Marker(point);
+        var icon=new BMap.Icon('q5.png',new BMap.Size(51,51));
+        var marker= new BMap.Marker(point,{icon:icon});
         marker.addEventListener('click',function() {
             var opts={
                 width:250,
@@ -67,7 +68,8 @@ function init(){
         var myGeo=new BMap.Geocoder();
         myGeo.getPoint(qtxt,function(point) {
             if(point){
-                var marker = new BMap.Marker(point);
+                var icon=new BMap.Icon('q5.png',new BMap.Size(51,51));
+                var marker = new BMap.Marker(point,{icon:icon});
                 marker.addEventListener('click',function() {
                     var infoWindow=new BMap.InfoWindow();
                     infoWindow.setContent('地点：' + qtxt);
@@ -78,6 +80,8 @@ function init(){
                 map.addOverlay(marker);
                 $('#citylist').append('<a href="javascript:void(0)" class="cityloc" lng='+point.lng+' lat='+point.lat+'>' + qtxt + '</a>');
                 map.centerAndZoom(point,16);
+            }else{
+                alert('未找到相关地址');
             }
         });
     });
@@ -87,5 +91,36 @@ function init(){
         var point = new BMap.Point(lng,lat);
         map.centerAndZoom(point,16);
     });
+    var selmarket=null;
+    /*map.addEventListener('click',function(obj) {
+        var point = obj.point;
+        if(selmarket) map.removeOverlay(selmarket);
+        var marker=new BMap.Marker(point);
+        selmarket = marker;
+        var geo = new BMap.Geocoder();
+
+        marker.addEventListener('click',function() {
+            geo.getLocation(point,function(result) {
+                if(result){
+                    var infoWindow=new BMap.InfoWindow();
+                    infoWindow.setContent('地点：' + result.address);
+                    infoWindow.setWidth(250);
+                    infoWindow.setHeight(100);
+                    map.openInfoWindow(infoWindow,point);
+                }
+            });
+            return false;
+        });
+        map.addOverlay(marker);
+        geo.getLocation(point,function(result) {
+            if(result){
+                var infoWindow=new BMap.InfoWindow();
+                infoWindow.setContent('地点：' + result.address);
+                infoWindow.setWidth(250);
+                infoWindow.setHeight(100);
+                map.openInfoWindow(infoWindow,point);
+            }
+        });
+    });*/
 }
 
