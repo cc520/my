@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Bosnia &amp; Herzegovina",
+        "addr": "New Mexico",
+        "id": 0
+    },
+    {
+        "name": "Kenya",
+        "addr": "Illinois",
+        "id": 1
+    },
+    {
+        "name": "Finland",
+        "addr": "Alabama",
+        "id": 2
+    },
+    {
+        "name": "Nepal",
+        "addr": "Ohio",
+        "id": 3
+    },
+    {
+        "name": "San Marino",
+        "addr": "Rhode Island",
+        "id": 4
+    },
+    {
+        "name": "Argentina",
+        "addr": "Louisiana",
+        "id": 5
+    },
+    {
+        "name": "Reunion",
+        "addr": "Iowa",
+        "id": 6
+    },
+    {
+        "name": "Monaco",
+        "addr": "Maryland",
+        "id": 7
+    },
+    {
+        "name": "Afghanistan",
+        "addr": "Idaho",
+        "id": 8
+    },
+    {
+        "name": "Belize",
+        "addr": "Kentucky",
+        "id": 9
+    }
+]
