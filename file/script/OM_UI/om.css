@@ -1,0 +1,24 @@
+.om_hf{outline:none}
+.om_hf:focus{outline:none;}
+.om_hf:active{outline:none;}
+.om_hf::-moz-focus-inner{border:0}
+
+.slider-demo{
+    width:500px;
+    height:375px;
+    border:1px solid #0092d2;
+}
+
+.qtip-target{
+    background: none repeat scroll 0 0 #DFE8F6;
+    border: 1px dotted #99BBE8;
+    color: #15428B;
+    cursor: default;
+    float: left;
+    font: bold 11px tahoma,arial,sans-serif;
+    margin: 10px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100px;
+}
+

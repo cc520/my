@@ -110,6 +110,9 @@ if(in_array($action, array('add', 'edit'))) {
 	$BANKS = explode('|', trim($MOD['cash_banks']));
 }
 switch($action) {
+    case 'booking' :
+		include tpl('member_booking', $module);
+        break;
 	case 'add':
 		if($submit) {
 			$member['groupid'] = $member['regid'];

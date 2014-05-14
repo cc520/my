@@ -33,6 +33,7 @@ define('DT_KEY', $CFG['authkey']);
 define('DT_CHARSET', $CFG['charset']);
 define('DT_CACHE', $CFG['cache_dir'] ? $CFG['cache_dir'] : DT_ROOT.'/file/cache');
 define('DT_SKIN', DT_STATIC.'skin/'.$CFG['skin'].'/');
+define('DT_OM_UI', DT_STATIC.'file/script/'.$CFG['OM_UI'].'/');
 define('VIP', $CFG['com_vip']);
 define('errmsg', 'Invalid Request');
 $L = array();

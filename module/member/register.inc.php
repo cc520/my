@@ -95,7 +95,7 @@ if($submit) {
 	$msg = question($answer, $MOD['question_register'], true);
 	if($msg) dalert($msg);
 	$post['email'] = trim($post['email']);
-	if($_SESSION['regemail'] != md5(md5($post['email'].DT_KEY.$DT_IP))) dalert($L['check_sign'].'(2)');
+	//if($_SESSION['regemail'] != md5(md5($post['email'].DT_KEY.$DT_IP))) dalert($L['check_sign'].'(2)');
 	$RG = array();
 	foreach($GROUP as $k=>$v) {
 		if($k > 4 && $v['vip'] == 0) $RG[] = $k;

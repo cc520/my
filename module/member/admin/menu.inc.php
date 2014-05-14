@@ -5,6 +5,7 @@ $menu = array(
 	array('会员列表', '?moduleid=2'),
 	array('审核会员', '?moduleid=2&action=check'),
 	array(VIP.'管理', '?moduleid=4&file=vip'),
+    array('预约管理', '?moduleid=2&file=booking'),
 	array('联系会员', '?moduleid=2&file=contact'),
 	array('在线会员', '?moduleid=2&file=online'),
 	array('在线对话', '?moduleid=2&file=chat'),

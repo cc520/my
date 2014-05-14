@@ -43,4 +43,5 @@ $CFG['static'] = '';
 $CFG['edittpl'] = '1';
 $CFG['executesql'] = '1';
 $CFG['founderid'] = '1';
+$CFG['OM_UI'] = 'OM_UI';
 ?>

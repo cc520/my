@@ -1,0 +1,17 @@
+.item{min-height:30px;line-height:20px;overflow:hidden;}
+.item_text{width:200px;height:100px;float:left;}
+.item label{width:100px;float:left;}
+.item label.error{color:#e83939;}
+.item input{float:left;}
+.item label.error{float:left;width:auto;margin-left:10px;}
+.item select{margin-top:5px;}
+.item .radio_kj{vertical-align:middle;margin-top:0;}
+
+#booking_time{width:150px;}
+
+.focus{border:1px solid blue;}
+input,textarea{border:1px solid #86a3c4;}
+.item .om-calendar{float:left;}
+#j_word_num{color:#86a3c4;}
+.booking_list th{text-align:left;}
+.booking_list td{width:150px;}
