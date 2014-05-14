@@ -14,13 +14,8 @@
             }
             //打印正字符
 
-            for($j=$t-$space;$j>0;$j--){
-                echo chr(ord($input)-$j);
-            }
-            echo $input; 
-            //打印反字符
-            for($i=1;$i<=$t-$space;$i++){
-                echo chr(ord($input)-$i);
+            for($i=-($t-abs($z));$i<=$t-abs($z);$i++){
+                echo chr(ord($input)-abs($i));
             }
             echo '<br/>';
         }
