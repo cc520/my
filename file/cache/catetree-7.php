@@ -1,1 +1,1 @@
-</select>
+<option value="35">报价分类1</option><option value="36">报价分类2</option><option value="37">报价分类3</option></select>

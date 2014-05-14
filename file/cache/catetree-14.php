@@ -1,1 +1,1 @@
-</select>
+<option value="41">สำฦตA</option><option value="42">สำฦตB</option><option value="43">สำฦตC</option></select>

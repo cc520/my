@@ -1,1 +1,1 @@
-</select>
+<option value="38">Õºø‚A</option><option value="39">Õºø‚B</option><option value="40">Õºø‚C</option></select>

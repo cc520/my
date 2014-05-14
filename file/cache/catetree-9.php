@@ -1,1 +1,1 @@
-</select>
+<option value="55">技术</option><option value="56">美工</option><option value="57">行政</option></select>
