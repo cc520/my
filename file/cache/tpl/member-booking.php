@@ -114,6 +114,6 @@
             <input type="submit" name="post[submit]" value="Ìá½»" id="sub"/>
         </div>
     </form>
-  <script src="" type="text/javascript"></script>
 <?php } ?>
+<script type="text/javascript">s('booking');m('<?php echo $action;?>');</script>
 <?php include template('footer',$module);?>
