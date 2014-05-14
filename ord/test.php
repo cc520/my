@@ -20,5 +20,23 @@
             echo '<br/>';
         }
     }
+    function rprintchr($input){
+        if($input<'A' || $input>'Z'){
+            echo 'error input';
+            return false;
+        }
+        $t=ord($input)-ord('A');
+        for($i=0;$i<=$t;$i++){
+            for($j=0;$j<$t-$i;$j++){
+                echo '&nbsp;';
+            }
+
+            for($j=-$i;$j<=$i;$j++){
+                echo chr(ord('A') + abs($j));
+            }
+            echo '<br/>';
+        }
+    }
     printchr('Z');
+    rprintchr('Z');
 ?>
