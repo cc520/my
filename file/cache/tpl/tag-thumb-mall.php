@@ -4,7 +4,7 @@
 <td valign="top"><a href="<?php echo $t['linkurl'];?>"<?php if($target) { ?> target="<?php echo $target;?>"<?php } ?>
 ><img src="<?php echo $t['thumb'];?>" width="<?php echo $width;?>" height="<?php echo $height;?>" alt="<?php echo $t['alt'];?>"/></a>
 <ul><li><a href="<?php echo $t['linkurl'];?>" title="<?php echo $t['alt'];?>"<?php if($target) { ?> target="<?php echo $target;?>"<?php } ?>
-><?php echo $t['title'];?></a></li><li><span class="f_price">гд<?php echo $t['price'];?></span></li></ul></td>
+><?php echo dsubstr($t['title'],4,'...');?></a></li><li><span class="f_price">гд<?php echo $t['price'];?></span></li></ul></td>
 <?php if($i%$cols==($cols-1)) { ?></tr><?php } ?>
 <?php } } ?>
 </table>

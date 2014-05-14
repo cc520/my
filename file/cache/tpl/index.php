@@ -23,9 +23,10 @@
 <div id="trades">
 <div class="tab_head">
 <ul>
-<li class="tab_2" id="trade_t_1" onmouseover="Tb(1, 3, 'trade', 'tab');"><a href="<?php echo $MODULE['6']['linkurl'];?>">求购</a></li>
-<li class="tab_1" id="trade_t_2" onmouseover="Tb(2, 3, 'trade', 'tab');"><a href="<?php echo $MODULE['5']['linkurl'];?>">供应</a></li>
-<li class="tab_1" id="trade_t_3" onmouseover="Tb(3, 3, 'trade', 'tab');"><a href="<?php echo $MODULE['22']['linkurl'];?>">招商</a></li>
+<li class="tab_2" id="trade_t_1" onmouseover="Tb(1, 4, 'trade', 'tab');"><a href="<?php echo $MODULE['6']['linkurl'];?>">求购</a></li>
+<li class="tab_1" id="trade_t_2" onmouseover="Tb(2, 4, 'trade', 'tab');"><a href="<?php echo $MODULE['5']['linkurl'];?>">供应</a></li>
+<li class="tab_1" id="trade_t_3" onmouseover="Tb(3, 4, 'trade', 'tab');"><a href="<?php echo $MODULE['22']['linkurl'];?>">招商</a></li>
+<li class="tab_1" id="trade_t_4" onmouseover="Tb(4, 4, 'trade', 'tab');"><a href="<?php echo $MODULE['16']['linkurl'];?>">商城</a></li>
 </ul>
 </div>
 <div class="box_body li_dot">
@@ -37,6 +38,9 @@
 </div>
 <div id="trade_c_3" class="itrade" style="display:none">
 <?php echo tag("moduleid=22&condition=status=3&areaid=$cityid&pagesize=".$DT['page_trade']."&datetype=2&target=_blank&order=addtime desc");?>
+</div>
+<div id="trade_c_4" class="itrade" style="display:none">
+                        <?php echo tag("moduleid=16&condition=status=3&areaid=$cityid&pagesize=".$DT['page_trade']."&datetype=2&target=_blank&order=addtime desc&template=list-mall");?>
 </div>
 </div>
 </div>
@@ -50,7 +54,7 @@
 <?php $mid = 5;?>
 <?php $child = get_maincat(0, $mid, 1);?>
 <?php if(is_array($child)) { foreach($child as $i => $c) { ?>
-<?php if($i<12 && $c['child']) { ?>
+<?php if($i<12) { ?>
 <?php $sub = get_maincat($c['catid'], $mid, 1);?>
 <ul>
 <li><a href="<?php echo $MODULE[$mid]['linkurl'];?><?php echo $c['linkurl'];?>" target="_blank"><strong><?php echo set_style($c['catname'], $c['style']);?></strong></a></li>
