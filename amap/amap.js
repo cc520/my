@@ -18,8 +18,13 @@ jQuery(document).ready(function($) {
     }
     addMarker();
 
-    AMap.event.addListener(marker,'dragend',function(e) {
-        pano.setPosition(e.lnglat);
+    var _panomarker=new AMap.Marker({
+        //draggable:true
+    });
+
+    AMap.event.addListener(_panomarker,'dragend',function(e) {
+        if(pano != undefined)
+            pano.setPosition(e.lnglat);
     });
     $('#J_addmark').click(function() {
         addMarker();
@@ -37,7 +42,9 @@ jQuery(document).ready(function($) {
         toolBar.doLocation();
     });
 
-    mapObj.plugin(['AMap.ToolBar'],function() {
+    mapObj.plugin(['AMap.ToolBar','AMap.MapType'],function() {
+        mt=new AMap.MapType({defaultType:0});
+        mapObj.addControl(mt);
         toolBar=new AMap.ToolBar();
         mapObj.addControl(toolBar);
         AMap.event.addListener(toolBar,'location',function(e) {
@@ -45,9 +52,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-    var _panomarker=new AMap.Marker({
-        //draggable:true
-    });
+
     var pano = null;
     AMap.event.addListener(mapObj,'click',function(e) {
         if(!isShow) return;
@@ -57,7 +62,7 @@ jQuery(document).ready(function($) {
         if(pano == undefined){
             pano=new AMap.Panorama('pano',{
                 systemLabel:false,
-                position : e.lnglat,
+                position:e.lnglat,
                 pov:{
                     heading:0,
                     pitch:0
@@ -72,8 +77,9 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('#pano_close').click(function() {
+    $('#J_closejj').click(function() {
         $('#panowrap').hide();
+        pano=null;
     });
 
 
