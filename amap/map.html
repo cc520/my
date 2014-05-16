@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <title></title>
   <link media="all" rel="stylesheet" href="map.css" type="text/css" />
-<script src="http://webapi.amap.com/maps?v=1.1&key=<用户key>" type="text/javascript"></script>
+  <script src="jquery.min.js" type="text/javascript"></script>
+<script src="http://webapi.amap.com/maps?v=1.2&key=c84af8341b1cc45c801d6765cda96087" type="text/javascript"></script>
 <script type="text/javascript" src="amap.js"></script>
 </head>
-<body onload="initialize()">
+<body>
 <div id="container"></div>  
+<div id="panowrap">
+<div id="pano"></div>
+<div id="pano_close">X</div>
+</div>
+<a href="javascript:void(0)" id="J_addmark">添加标记</a>
+<a href="javascript:void(0)" id="J_showjj">显示街景</a>
+<a href="javascript:void(0)" id="J_loc">开始定位</a>
+<div id="citylist"></div>
+<input id="s_txt" name="" type="text" />
+<a href="javascript:void(0)" id="J_search">查询</a>
+<a href="javascript:void(0)" id="J_closejj">关闭街景</a>
 </body>
 </html>
