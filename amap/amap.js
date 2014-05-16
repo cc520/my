@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     var isShow=false;
     var opts={
         center:point,
-        level:11
+        level:15
     };
     var mapObj=new AMap.Map('container',opts);
 
@@ -35,6 +35,7 @@ jQuery(document).ready(function($) {
         isShow = true;
     },function() {
         panoLayer.setMap(null);
+        _panomarker.setMap(null);
         isShow =false;
     });
 
@@ -137,5 +138,39 @@ jQuery(document).ready(function($) {
     });
     AMap.event.addListener(marker,'click',function(e){
         infoWindow.open(mapObj,marker.getPosition());
-    })
+    });
+    //右键上下文
+    
+    var contextItem = new AMap.ContextMenu();
+    contextItem.addItem('放大一级',function() {
+        mapObj.zoomIn();
+    },0);
+    contextItem.addItem('缩小一级',function() {
+        mapObj.zoomOut();
+    },1);
+    contextItem.addItem('缩放至全国范围',function() { 
+        mapObj.setZoomAndCenter(4,new AMap.LngLat(108,34));
+    },2);
+    var infonum=0;
+    contextItem.addItem('添加标记',function() {
+        var marker = new AMap.Marker({
+            map:mapObj,
+            position:contextMenuPosition,
+            icon : 'xin.png',
+            offset:{x:-8,y:-10}
+        });
+        var info=new AMap.InfoWindow({
+            content:'这是第'+(++infonum)+'个',
+            position:contextMenuPosition,
+            closeWhenClickMap:true
+        });
+        AMap.event.addListener(marker,'click',function(e){
+            info.open(mapObj);
+        });
+    },3);
+    AMap.event.addListener(mapObj,'rightclick',function(e) {
+        contextItem.open(mapObj,e.lnglat);
+        contextMenuPosition = e.lnglat;
+    });
+    
 });
