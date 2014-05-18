@@ -178,10 +178,10 @@ jQuery(document).ready(function($) {
         $('#J_get_addr').click(function() {
             var J_lng = $('#J_lng');
             var J_lat = $('#J_lat');
+            var loc=geo.getLocation(AMap.LngLat(J_lng,J_lat));
+            console.log(loc);
         });
     });
-
-
 
     point = new AMap.LngLat(100,100);
     var _opts={

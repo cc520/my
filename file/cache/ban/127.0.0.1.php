@@ -1,1 +1,1 @@
-<?php defined('IN_DESTOON') or exit('Access Denied'); return array ('time' => 1400376999,'times' => 5,); ?>
+<?php defined('IN_DESTOON') or exit('Access Denied'); return array ('time' => 1400398676,'times' => 5,); ?>
