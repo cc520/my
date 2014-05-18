@@ -1,1 +1,1 @@
-<option value="47">知道分类1</option><option value="48">知道分类2</option></select>
+</select>

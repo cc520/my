@@ -172,5 +172,24 @@ jQuery(document).ready(function($) {
         contextItem.open(mapObj,e.lnglat);
         contextMenuPosition = e.lnglat;
     });
-    
+
+    AMap.plugin(['AMap.Geocoder'],function() {
+        geo=AMap.Geocoder();
+        $('#J_get_addr').click(function() {
+            var J_lng = $('#J_lng');
+            var J_lat = $('#J_lat');
+        });
+    });
+
+
+
+    point = new AMap.LngLat(100,100);
+    var _opts={
+        center:point,
+        level:15
+    }; 
+    var osel=AMap.Map('selcitymap',_opts);
+    AMap.event.addListener(osel,'click',function(e) {
+        alert('我点击了地图');
+    });
 });

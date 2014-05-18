@@ -1,1 +1,0 @@
-<?php defined('IN_DESTOON') or exit('Access Denied'); return array (3 => array ('typeid' => '3','typename' => 'ÄãºÃ','style' => '',),4 => array ('typeid' => '4','typename' => 'ÎÒºÃ','style' => '',),); ?>

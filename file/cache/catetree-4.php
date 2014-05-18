@@ -1,1 +1,1 @@
-<option value="3">公司默认分类</option><option value="6">分类A</option><option value="7">&nbsp;├分类A-A</option><option value="8">&nbsp;└分类A-B</option></select>
+<option value="3">公司默认分类</option></select>

@@ -1,1 +1,1 @@
-<option value="32">团购分类1</option><option value="33">团购分类2</option><option value="34">团购分类3</option></select>
+</select>

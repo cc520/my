@@ -1,1 +1,1 @@
-<option value="52">Æ·ÅÆA</option><option value="53">Æ·ÅÆB</option><option value="54">Æ·ÅÆC</option></select>
+</select>

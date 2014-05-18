@@ -9,7 +9,7 @@ defined('IN_DESTOON') or exit('Access Denied');
 $CFG['database'] = 'mysql';
 $CFG['pconnect'] = '0';
 $CFG['db_host'] = 'localhost';
-$CFG['db_name'] = 'destoon';
+$CFG['db_name'] = 'abc';
 $CFG['db_user'] = 'root';
 $CFG['db_pass'] = '';
 $CFG['db_charset'] = 'gbk';
